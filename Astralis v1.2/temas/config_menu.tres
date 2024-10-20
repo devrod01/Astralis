@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bx5ew11l5r0ch"]
+
+[ext_resource type="FontFile" uid="uid://dx8rjy5i7ne6" path="res://font/Stepalange-x3BLm.otf" id="1_cfs4r"]
+
+[resource]
+resource_name = "Main_menu_theme"
+default_font = ExtResource("1_cfs4r")
+default_font_size = 25
