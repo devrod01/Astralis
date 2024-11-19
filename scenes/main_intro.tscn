@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxafyw1jd26d5"]
+
+[ext_resource type="VideoStream" path="res://scenes/Astralis.ogv" id="1_ou0r8"]
+[ext_resource type="Script" path="res://scripts/main_intro.gd" id="2_yv1cp"]
+[ext_resource type="FontFile" uid="uid://2bqe2el7ao7a" path="res://assets/font/StepalangeShort-p7GZd.otf" id="3_3cc3k"]
+[ext_resource type="Script" path="res://scripts/label.gd" id="4_kcjqk"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_ou0r8")
+autoplay = true
+expand = true
+script = ExtResource("2_yv1cp")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_3cc3k")
+theme_override_font_sizes/font_size = 40
+text = "Segure Enter para pular"
+script = ExtResource("4_kcjqk")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
