@@ -20,7 +20,7 @@ aseprite_executable_path="C:/Program Files/Aseprite/Aseprite.exe"
 
 [autoload]
 
-MainMenuMusic="res://scenes/main_menu_music.tscn"
+MainMenuMusic="*res://scripts/Main_menu_music.gd"
 
 [display]
 
